@@ -4,8 +4,6 @@ var c = 0;
 var answerSequence = [];
 var pictureSequence = [];
 var rounds = 10;
-var rightSound = new Audio("sounds/right.mp3");
-var wrongSound = new Audio("sounds/wrong.mp3");
 
 $("#startButton").click(function() {
   unhideButtons();
@@ -44,6 +42,7 @@ $(".gameButton").click(event, function() {
     $(".answerBox").addClass("correct");
     $("#answerLog").text("Correct!");
     $("#" + answerSequence[c]).addClass("correctButton");
+    var rightSound = new Audio("sounds/right.mp3");
     rightSound.play();
     scoreTally++;
   } else {
@@ -51,6 +50,7 @@ $(".gameButton").click(event, function() {
     $(".answerBox").addClass("incorrect");
     $("#" + answerSequence[c]).addClass("correctButton");
     $("#" + userAnswer[c]).addClass("incorrectButton");
+    var wrongSound = new Audio("sounds/wrong.mp3");
     wrongSound.play();
   }
   setTimeout(function() {
@@ -72,6 +72,9 @@ $(".gameButton").click(event, function() {
 
 function finishGame() {
   $(".imgBox").fadeOut(2000);
+  $("#noah").fadeOut(500);
+  $("#louis").fadeOut(500);
+  $("#lucas").fadeOut(500);
   console.log(scoreTally);
   setTimeout(function() {
     $(".postGame").text("You got " + scoreTally + " out of " + rounds + "!");

@@ -10,15 +10,15 @@ text-align: center;
 margin: auto;
 margin: 0;
 background-color: #A5C9CA;
-height: 15vh;
+height: 8vh;
 padding: 5px;
 }
 .photoBox {
   text-align: center;
-padding-top: 30px;
+padding-top: 15px;
   margin: 0;
   background-color: #E7F6F2;
-  height: 50vh;
+  height: 45vh;
 }
 .answerBox {
   margin: 0;
@@ -30,9 +30,8 @@ padding-top: 30px;
   margin: 0;
   text-align:center;
   background-color: #A5C9CA;
-  padding: 20px 0;
-  height: 78px;
-  height: 15vh;
+  padding: 5px 0;
+  height: 8vh;
 }
 
 h1 {
@@ -44,7 +43,7 @@ h1 {
 p {
   margin-bottom: 0;
     font-family: 'Silkscreen', cursive;
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 .correct {
