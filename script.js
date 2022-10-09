@@ -77,8 +77,11 @@ function finishGame() {
   $("#lucas").fadeOut(500);
   console.log(scoreTally);
   setTimeout(function() {
-    $(".postGame").text("You got " + scoreTally + " out of " + rounds + "!");
-    $(".postGame").fadeIn(3000);
+    $(".postGame2").text(scoreTally);
+    $(".postGame3").text("out of " + rounds + "!");
+    $(".postGame1").fadeIn(1000);
+    $(".postGame2").fadeIn(2000);
+    $(".postGame3").fadeIn(3000);
     $("#resetButton").fadeIn(3000);
   }, 2200);
 

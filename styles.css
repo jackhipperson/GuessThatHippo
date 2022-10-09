@@ -31,7 +31,11 @@ padding-top: 15px;
   text-align:center;
   background-color: #A5C9CA;
   padding: 5px 0;
-  height: 8vh;
+  height: 12vh;
+}
+
+.gameButton {
+  margin: 0 7px;
 }
 
 h1 {
@@ -44,6 +48,10 @@ p {
   margin-bottom: 0;
     font-family: 'Silkscreen', cursive;
     font-size: 1.5rem;
+}
+
+.postGame2 {
+  font-size: 5rem;
 }
 
 .correct {
@@ -71,8 +79,4 @@ p {
 }
 .hidden {
   display: none;
-}
-
-#startButton {
-  margin: 20px;
 }
