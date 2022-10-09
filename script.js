@@ -4,6 +4,8 @@ var c = 0;
 var answerSequence = [];
 var pictureSequence = [];
 var rounds = 10;
+var rightSound = new Audio("sounds/right.mp3");
+var wrongSound = new Audio("sounds/wrong.mp3");
 
 $("#startButton").click(function() {
   unhideButtons();
@@ -42,16 +44,14 @@ $(".gameButton").click(event, function() {
     $(".answerBox").addClass("correct");
     $("#answerLog").text("Correct!");
     $("#" + answerSequence[c]).addClass("correctButton");
-    var sound = new Audio("sounds/right.mp3");
-    sound.play();
+    rightSound.play();
     scoreTally++;
   } else {
     $("#answerLog").text("Incorrect!");
     $(".answerBox").addClass("incorrect");
     $("#" + answerSequence[c]).addClass("correctButton");
     $("#" + userAnswer[c]).addClass("incorrectButton");
-    var sound = new Audio("sounds/wrong.mp3");
-    sound.play();
+    wrongSound.play();
   }
   setTimeout(function() {
     $("#answerLog").text("");
