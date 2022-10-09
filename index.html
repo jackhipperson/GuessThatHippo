@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Name That Hippo!</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Silkscreen&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="header">
+    <h1>Guess The Hippo!</h1>
+
+  </div>
+
+  <div class="photoBox">
+    <p class="hidden postGame"></p>
+    <br>
+    <button id="resetButton" class="hidden btn btn-md btn-outline-dark">Reset</button>
+    <br>
+    <img class="imgBox" src="photos/qu.jpg" alt="">
+    <br>
+    <button id="startButton" class="btn btn-md btn-outline-dark">Start</button>
+  </div>
+
+  <div class="answerBox">
+    <p id="answerLog"></p>
+  </div>
+
+  <div class="buttons">
+    <button id="noah" class="gameButton btn btn-md btn-dark hidden">Noah</button>
+    <button id="louis" class="gameButton btn btn-md btn-dark hidden">Louis</button>
+    <button id="lucas" class="gameButton btn btn-md btn-dark hidden">Lucas</button>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" charset="utf-8"></script>
+  <script src="script.js" charset="utf-8"></script>
+</body>
+
+</html>
